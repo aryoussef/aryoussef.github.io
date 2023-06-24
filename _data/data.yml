@@ -3,7 +3,7 @@ basic:
   title: Software Engineer          # job title
   avatar:
     show: true                       # show or hide avatar
-    path: /assets/images/profile.png # avatar file path
+    path: /assets/images/IMG_1033.jpeg # avatar file path
 
 contact:
   # meta
