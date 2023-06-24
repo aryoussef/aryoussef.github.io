@@ -27,7 +27,7 @@ open_graph:
 # Style
 text_direction: ltr         # text direction, 'ltr' or 'rtl'
 date_format: "%Y-%m-%d"     # date format
-theme_color: "#FFFF00"      # your favorite theme color
+theme_color: "#1DA1F2"      # your favorite theme color
 contact_delimiter: "·"      # contact delimiter, '·', '/' or '|'
 section_icon: true          # section title icon, true or false
 section_title: uppercase    # section title style, 'uppercase', 'lowercase', 'capitalize' or 'none'
