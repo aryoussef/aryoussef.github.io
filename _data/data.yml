@@ -1,22 +1,22 @@
 basic:
-  name: Foo Bar                      # name
-  title: Backend Developer           # job title
+  name: Youssef Arahou                     # name
+  title: Software Engineer          # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
   # meta
-  location: Beijing, China # location
-  email: me@example.com    # email address
-  phone: +86-111-2222-3333 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
+  location: Rabat, Morocco # location
+  email: arahou.y@gmail.com    # email address
+  phone: +212 670 437490 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: aryoussef.github.io    # site URL without schema, like example.com, will automatically prepand "https://"
 
-  gender:                  # gender or pronoun
-  birthday:                # birthday
-  nationality:             # nationality
+  gender: Male                 # gender or pronoun
+  birthday: 08-08-1988           # birthday
+  nationality: Moroccan         # nationality
   visa:                    # passport visa
-  drivinglicense:          # driving licence
+  drivinglicense: B        # driving licence
 
   # contact
   wechat:                  # username
