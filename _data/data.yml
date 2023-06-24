@@ -16,7 +16,7 @@ contact:
   birthday: 08-08-1988           # birthday
   nationality: Moroccan         # nationality
   visa:                    # passport visa
-  drivinglicense: B        # driving licence
+  drivinglicense:        # driving licence
 
   # contact
   wechat:                  # username
