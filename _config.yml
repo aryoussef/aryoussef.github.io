@@ -19,7 +19,7 @@ lang: en
 open: true                  # show or hide your resume
 allow_search_engines: true  # allow your resume indexing by search engine, 'true' or 'false'
 analytics:
-  google:                   # google analytics
+  google: G-REH5MBNP7S                  # google analytics
   cloudflare:               # cloudflare analytics
   umami:
     script: https://u.tarrex.com/u.js                # umami analytics script src (Replace it with your own config)
