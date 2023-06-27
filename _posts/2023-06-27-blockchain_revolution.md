@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Youssef
+title : blockchain revolution
 ---
 
 Title: The Blockchain Revolution: Reshaping Industries with Decentralization
