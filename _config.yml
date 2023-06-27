@@ -1,3 +1,5 @@
+plugins:
+  - jekyll-paginate
 # Welcome to Jekyll!
 title: Online Resume
 url:
