@@ -1,5 +1,5 @@
-<div class="wrapper" style="margin:auto;width:70%;text-align:justify;">
-<nav>
+<div class="wrapper" style="margin:auto;width:70%;">
+<nav style="text-align:justify;">
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;" {% endif %}>
       <b>{{ item.name }}</b>
