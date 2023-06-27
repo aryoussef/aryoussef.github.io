@@ -12,7 +12,7 @@ Hello, I am Youssef Arahou, I have an engineer’s degree (master’s degree lev
 Here are some interesting readings
 </p>
 <p>
- <a href="/files/bitcoin.pdf">Satoshi Nakamoto paper about blockchain</a>
+ <a style="color:red" href="/files/bitcoin.pdf">Satoshi Nakamoto paper about blockchain</a>
 </p>
 </div>
  
