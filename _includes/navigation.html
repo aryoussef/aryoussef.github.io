@@ -1,7 +1,11 @@
+<script>
+  let myurl = window.location.pathname;
+  let myitem = myurl.split('/')[0];
+</script>
 <div class="wrapper" style="margin:auto">
 <nav>
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;" {% endif %}>
+    <a href="{{ item.link }}" {% if myitem == item.link %}style="color: red;" {% endif %}>
       <b>{{ item.name }}</b>
     </a>
   {% endfor %}
