@@ -14,6 +14,11 @@ sass:
   sass_dir: _sass
   style:    compressed
 
+collections:
+  posts: 
+    output: true
+    permalink: /blog/:year/:month/:day/:title:output_ext
+
 # Custom
 lang: en
 open: true                  # show or hide your resume
