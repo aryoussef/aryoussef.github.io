@@ -2,7 +2,7 @@ plugins:
   - jekyll-paginate
 whitelist:
   - jekyll-paginate
-paginate: 5
+paginate: 3
 paginate_path: "/blog/page:num/"
 # Welcome to Jekyll!
 title: Online Resume
