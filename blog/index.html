@@ -20,7 +20,7 @@ title: Blog
 <!-- Pagination links -->
 <div class="pagination" style="margin:auto;">
   {% if paginator.previous_page %}
-    <button href="{{ paginator.previous_page_path }}" class="previous">
+    <button onclick="location.href={{ paginator.previous_page_path }}" class="previous">
       Previous
     </button>
   {% else %}
@@ -30,7 +30,7 @@ title: Blog
     Page: {{ paginator.page }} of {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
-    <button href="{{ paginator.next_page_path }}" class="next">Next</button>
+    <button onclick="location.href={{ paginator.next_page_path }}" class="next">Next</button>
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
