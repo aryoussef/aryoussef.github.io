@@ -14,5 +14,6 @@ Here are some interesting readings
 <p>
  <a style="color:red" href="/files/bitcoin.pdf">Satoshi Nakamoto paper about blockchain</a>
 </p>
+<video controls src="https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8">
 </div>
  
