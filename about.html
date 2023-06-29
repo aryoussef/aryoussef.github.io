@@ -39,12 +39,6 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 });
 </script>
 -->
-
-<p>
-<input type= "url" id="urlinput" size= "40">
-</p>
-<button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
-
 <script type="text/javascript">
 function generateqrcode (url, qrcodediv) {
 var qrcode = new QRCode(document.getElementById(qrcodediv), {
@@ -60,6 +54,12 @@ return qrcode;
 
 }
 </script>
+<p>
+<input type= "url" id="urlinput" size= "40">
+</p>
+<button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
+
+
 
 
 
