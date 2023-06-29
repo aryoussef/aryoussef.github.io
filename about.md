@@ -18,12 +18,39 @@ Here are some interesting readings
 <video controls width="100%" style="border: solid;" src="https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8">
 </video>
 </p>
-
-
 <p>
 <video controls width="100%" style="border: solid;" src="https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8">
 </video>
 </p>
+<script src="https://www.github.com/davidshimjs/qrcode.min.js"></script>
+<p>
+<label for="name">Generer un QR code pour l’url:</label>
+</p>
+<p>
+<input type= "url" id="urlinput" size= "70">url</input>
+</p>
+<button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");"
+
+<div id="qrcode"></div>
+<script type="text/javascript">
+function(url, qrcodediv) {
+var qrcode = new QRCode(document.getElementById(qrcodediv), {
+	text: url,
+	width: 128,
+	height: 128,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+return true;
+
+}
+</script>
+
+
+
+
 
 </div>
  
