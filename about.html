@@ -1,0 +1,56 @@
+---
+layout: default
+title: About
+---
+<div class="wrapper">
+{%- include navigation.html %}
+
+<h1>About page</h1>
+
+Hello, I am Youssef Arahou, I have an engineer’s degree (master’s degree level) in information technology with an experience of 12 years with great companies.
+<p>
+Here are some interesting readings
+</p>
+<p>
+ <a style="color:red" href="/files/bitcoin.pdf">Satoshi Nakamoto paper about blockchain</a>
+</p>
+<p>
+<video controls width="100%" style="border: solid;" src="https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8">
+</video>
+</p>
+<p>
+<video controls width="100%" style="border: solid;" src="https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8">
+</video>
+</p>
+<script src="https://www.github.com/davidshimjs/qrcode.min.js"></script>
+<p>
+<label for="name">Generer un QR code pour l’url:</label>
+</p>
+<p>
+<input type= "url" id="urlinput" size= "70">
+</p>
+<button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
+
+<div id="qrcode"></div>
+<script type="text/javascript">
+function generateqrcode (url, qrcodediv) {
+var qrcode = new QRCode(document.getElementById(qrcodediv), {
+	text: url,
+	width: 128,
+	height: 128,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+return true;
+
+}
+</script>
+
+
+
+
+
+</div>
+ 
