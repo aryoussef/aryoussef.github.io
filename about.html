@@ -24,21 +24,21 @@ Here are some interesting readings
 </p>
 <script type="text/javascript" src="assets/js/qrcode.js"></script>
 <p>
-<label for="name">Generer un QR code pour l’url:</label>
+<label for="name">This pages QR code:</label>
 </p>
-<div id="qrcode" style="width:128px;height:128px;border:solid;"></div>
-<!--
+<div id="qrcode" style="width:512px;height:512px;border:solid;margin:auto"></div>
+
 <script>
 var qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: "www.google.com",
-	width: 128,
-	height: 128,
+	text: "https://aryoussef.github.io/",
+	width: 512,
+	height: 512,
 	colorDark : "#000000",
 	colorLight : "#ffffff",
 	correctLevel : QRCode.CorrectLevel.H
 });
 </script>
--->
+<!--
 <script type="text/javascript">
 function generateqrcode (url, qrcodediv) {
 var qrcode = new QRCode(document.getElementById(qrcodediv), {
@@ -54,11 +54,12 @@ return qrcode;
 
 }
 </script>
+
 <p>
 <input type="text" id="urlinput" >
 </p>
 <button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
-
+-->
 
 
 
