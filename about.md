@@ -29,7 +29,7 @@ Here are some interesting readings
 <p>
 <input type= "url" id="urlinput" size= "70">url</input>
 </p>
-<button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");"
+<button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
 
 <div id="qrcode"></div>
 <script type="text/javascript">
