@@ -33,7 +33,7 @@ Here are some interesting readings
 
 <div id="qrcode"></div>
 <script type="text/javascript">
-function(url, qrcodediv) {
+function generateqrcode (url, qrcodediv) {
 var qrcode = new QRCode(document.getElementById(qrcodediv), {
 	text: url,
 	width: 128,
