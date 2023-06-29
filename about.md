@@ -27,7 +27,7 @@ Here are some interesting readings
 <label for="name">Generer un QR code pour l’url:</label>
 </p>
 <p>
-<input type= "url" id="urlinput" size= "70">url</input>
+<input type= "url" id="urlinput" size= "70">
 </p>
 <button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
 
