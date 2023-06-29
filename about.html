@@ -26,13 +26,13 @@ Here are some interesting readings
 <p>
 <label for="name">This pages QR code:</label>
 </p>
-<div id="qrcode" style="width:512px;height:512px;border:solid;margin:auto"></div>
+<div id="qrcode" style="width:256px;height:256px;margin:auto"></div>
 
 <script>
 var qrcode = new QRCode(document.getElementById("qrcode"), {
 	text: "https://aryoussef.github.io/",
-	width: 512,
-	height: 512,
+	width: 256,
+	height: 256,
 	colorDark : "#000000",
 	colorLight : "#ffffff",
 	correctLevel : QRCode.CorrectLevel.H
