@@ -27,7 +27,7 @@ Here are some interesting readings
 <label for="name">This pages QR code:</label>
 </p>
 <div id="qrcode" style="width:256px;height:256px;margin:auto"></div>
-
+<!--
 <script>
 var qrcode = new QRCode(document.getElementById("qrcode"), {
 	text: "https://aryoussef.github.io/",
@@ -38,10 +38,11 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 	correctLevel : QRCode.CorrectLevel.H
 });
 </script>
-<!--
+-->
+
 <script type="text/javascript">
 function generateqrcode (url, qrcodediv) {
-var qrcode = new QRCode(document.getElementById(qrcodediv), {
+return new QRCode(document.getElementById(qrcodediv), {
 	text: url,
 	width: 128,
 	height: 128,
@@ -50,7 +51,7 @@ var qrcode = new QRCode(document.getElementById(qrcodediv), {
 	correctLevel : QRCode.CorrectLevel.H
 });
 
-return qrcode;
+
 
 }
 </script>
@@ -58,8 +59,8 @@ return qrcode;
 <p>
 <input type="text" id="urlinput" >
 </p>
-<button onclick= "generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
--->
+<button onclick="var qrcode = generateqrcode(document.getElementById("urlinput").value, "qrcode");">Generate</button>
+
 
 
 
