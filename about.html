@@ -23,26 +23,11 @@ Here are some interesting readings
 </video>
 </p>
 <script type="text/javascript" src="assets/js/qrcode.js"></script>
-<p>
-<label for="name">Generate your QR code:</label>
-</p>
-<div id="qrcode" style="width:256px;height:256px;margin:auto"></div>
-<!--
-<script>
-var qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: "https://aryoussef.github.io/",
-	width: 256,
-	height: 256,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-</script>
--->
 
 <script type="text/javascript">
 var qrcode;
 function generateqrcode (url) {
+qrcode.clear();
 qrcode = new QRCode(document.getElementById("qrcode"), {
 	text: url,
 	width: 256,
@@ -57,12 +42,32 @@ return true;
 }
 //generateqrcode("google.com");
 </script>
-
+	
+<p>
+<label for="name">Generate your QR code:</label>
+</p>
 <p>
 <input type="url" id="urlinput" >
 </p>
 
 <button onclick="generateqrcode(document.getElementById('urlinput').value)">Generate</button>
+
+<div id="qrcode" style="width:256px;height:256px;margin:auto"></div>
+<!--
+<script>
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: "https://aryoussef.github.io/",
+	width: 256,
+	height: 256,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+</script>
+-->
+
+
+
 
 
 
