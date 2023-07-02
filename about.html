@@ -14,6 +14,8 @@ Here are some interesting readings
 <p>
  <a style="color:red" href="/files/bitcoin.pdf">Satoshi Nakamoto paper about blockchain</a>
 </p>
+<div id="genCounter"></div>
+<script>document.getElementById("genCounter").innerHTML = localStorage.getItem('counter')</script>
 <p>
 <video controls width="100%" style="border: solid;" src="https://cdnapi.kaltura.com/p/2503451/sp/250345100/playManifest/entryId/1_gb6tjmle/protocol/https/format/applehttp/a.m3u8">
 </video>
@@ -44,6 +46,17 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
 	colorLight : "#ffffff",
 	correctLevel : QRCode.CorrectLevel.H
 });
+
+function countInc() {
+var n = localStorage.getItem('counter');
+if (n === null) {
+    n = 1;
+} else {
+    n++;
+}
+//console.log(n);
+localStorage.setItem("counter", n);
+}
 	
 function generateqrcode (url) {
 if(qrcode != null) 
@@ -58,10 +71,12 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
 	correctLevel : QRCode.CorrectLevel.H
 });
 }
+countInc();
 return true;
 
 }
 //generateqrcode("google.com");
+
 </script>
 <br/>
 <button onclick="generateqrcode(document.getElementById('urlinput').value)">Generate</button>
