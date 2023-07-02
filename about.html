@@ -55,15 +55,14 @@ return new QRCode(document.getElementById("qrcode"), {
 
 
 }
-qrcode = generateqrcode("google.com");
+//qrcode = generateqrcode("google.com");
 </script>
 
 <p>
 <input type="text" id="urlinput" >
 </p>
-<!--
-<button onclick="qrcode = generateqrcode(document.getElementById("urlinput").value);">Generate</button>
--->
+
+<button onclick="qrcode = generateqrcode("google.com");">Generate</button>
 
 
 
