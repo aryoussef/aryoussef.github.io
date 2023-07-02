@@ -24,6 +24,18 @@ Here are some interesting readings
 </p>
 <script type="text/javascript" src="assets/js/qrcode.js"></script>
 
+<p>
+<label for="name">Generate your QR code:</label>
+</p>
+<p>
+<input type="url" id="urlinput" >
+</p>
+
+<button onclick="generateqrcode(document.getElementById('urlinput').value)">Generate</button>
+
+<div id="qrcode" style="width:256px;height:256px;margin:auto"></div>
+
+
 <script type="text/javascript">
 var qrcode;
 function generateqrcode (url) {
@@ -43,16 +55,6 @@ return true;
 //generateqrcode("google.com");
 </script>
 	
-<p>
-<label for="name">Generate your QR code:</label>
-</p>
-<p>
-<input type="url" id="urlinput" >
-</p>
-
-<button onclick="generateqrcode(document.getElementById('urlinput').value)">Generate</button>
-
-<div id="qrcode" style="width:256px;height:256px;margin:auto"></div>
 <!--
 <script>
 var qrcode = new QRCode(document.getElementById("qrcode"), {
