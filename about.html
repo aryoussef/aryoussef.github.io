@@ -37,7 +37,8 @@ Here are some interesting readings
 var qrcode;
 function generateqrcode (url) {
 if(qrcode != null) 
-	qrcode.clear();
+	qrcode.makeCode(url);
+else {
 qrcode = new QRCode(document.getElementById("qrcode"), {
 	text: url,
 	width: 256,
@@ -46,7 +47,7 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
 	colorLight : "#ffffff",
 	correctLevel : QRCode.CorrectLevel.H
 });
-
+}
 return true;
 
 }
