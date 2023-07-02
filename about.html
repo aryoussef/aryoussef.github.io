@@ -35,6 +35,16 @@ Here are some interesting readings
 	
 <script type="text/javascript">
 var qrcode;
+
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: "https://aryoussef.github.io/",
+	width: 256,
+	height: 256,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+	
 function generateqrcode (url) {
 if(qrcode != null) 
 	qrcode.makeCode(url);
