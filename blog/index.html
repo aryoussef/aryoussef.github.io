@@ -38,3 +38,18 @@ title: Blog
   
   {%- include footer.html %}
 </div>
+
+<script>
+function countInc() {
+var n = localStorage.getItem('visitorCounter');
+if (n === null) {
+    n = 1;
+} else {
+    n++;
+}
+//console.log(n);
+localStorage.setItem("visitorCounter", n);
+}
+
+countInc();
+</script>
