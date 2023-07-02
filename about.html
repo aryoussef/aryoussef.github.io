@@ -43,7 +43,7 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 <script type="text/javascript">
 var qrcode;
 function generateqrcode (url) {
-return new QRCode(document.getElementById("qrcode"), {
+qrcode = new QRCode(document.getElementById("qrcode"), {
 	text: url,
 	width: 128,
 	height: 128,
@@ -52,7 +52,7 @@ return new QRCode(document.getElementById("qrcode"), {
 	correctLevel : QRCode.CorrectLevel.H
 });
 
-
+return true;
 
 }
 //qrcode = generateqrcode("google.com");
@@ -62,7 +62,7 @@ return new QRCode(document.getElementById("qrcode"), {
 <input type="text" id="urlinput" >
 </p>
 
-<button onclick="qrcode = generateqrcode("google.com");">Generate</button>
+<button onclick="generateqrcode("google.com");">Generate</button>
 
 
 
