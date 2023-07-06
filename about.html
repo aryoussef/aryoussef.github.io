@@ -41,6 +41,36 @@ Here are some interesting readings
 </p>
 <br/>
 <div id="qrcode" style="width:256px;height:256px;margin:auto"></div>
+
+<script type="text/javascript" src="assets/js/faunadb.js"></script>
+<script type="text/javascript">
+function saveUrl(myurl) {
+  var faunadb = window.faunadb
+  var q = faunadb.query
+  var client = new faunadb.Client({
+    secret: 'fnAFH9CxCFAAzdRGQfs7071-ZmWSuUkLD-ralH5x',
+    // Adjust the endpoint if you are using Region Groups
+    endpoint: 'https://db.eu.fauna.com/',
+  })
+  client.query(
+    // q.Get(q.Ref(q.Collection('Message'), '369229459510788301'))
+     q.Create(
+    q.Collection('QRcodesurl'),
+    { data: { url: myurl,
+              creationdate: String(new Date()) 
+                } 
+    }
+  )
+  )
+  .then(function (res) { 
+      //console.log('Result:', res);
+      //document.getElementById("messages").innerHTML = "Result is : "+res.data.message;
+ })
+  .catch(function (err) { //console.log('Error:', err) })
+}
+</script>
+
+
 	
 <script type="text/javascript">
 var qrcode;
@@ -79,6 +109,7 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
 });
 }
 countInc();
+saveUrl(url);
 return true;
 
 }
