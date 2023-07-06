@@ -5,6 +5,34 @@ layout: default
 {%- assign data = site.data.data %}
 {%- include common.html %}
 
+<script type="text/javascript" src="assets/js/faunadb.js"></script>
+<script type="text/javascript">
+function saveUrl(myurl) {
+  var faunadb = window.faunadb
+  var q = faunadb.query
+  var client = new faunadb.Client({
+    secret: 'fnAFIN9VxvAAzVwaG-yQnHUGepn1UMa15r1pDt2O',
+    // Adjust the endpoint if you are using Region Groups
+    endpoint: 'https://db.eu.fauna.com/',
+  })
+  client.query(
+    // q.Get(q.Ref(q.Collection('Message'), '369229459510788301'))
+     q.Create(
+    q.Collection('QRcodesurl'),
+    { data: { url: myurl,
+              creationdate: String(new Date()) 
+                } 
+    }
+  )
+  )
+  .then(function (res) { 
+      console.log('Result:', res);
+      //document.getElementById("messages").innerHTML = "Result is : "+res.data.message;
+ })
+  .catch(function (err) { console.log('Error:', err) })
+}
+</script>
+
 <script>
 function countInc() {
 var n = localStorage.getItem('visitorCounter');
@@ -18,4 +46,5 @@ localStorage.setItem("visitorCounter", n);
 }
 
 countInc();
+saveUrl('visited.me');
 </script>
